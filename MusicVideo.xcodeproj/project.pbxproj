@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CA2D3E11CA6408900761C91 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA2D3E01CA6408900761C91 /* Reachability.m */; };
 		0CC6CC361CA5443B0028BF48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6CC351CA5443B0028BF48 /* AppDelegate.swift */; };
 		0CC6CC381CA5443B0028BF48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6CC371CA5443B0028BF48 /* ViewController.swift */; };
 		0CC6CC3B1CA5443B0028BF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6CC391CA5443B0028BF48 /* Main.storyboard */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CA2D3DE1CA6408800761C91 /* MusicVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CA2D3DF1CA6408900761C91 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0CA2D3E01CA6408900761C91 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		0CC6CC321CA5443B0028BF48 /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC6CC351CA5443B0028BF48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC6CC371CA5443B0028BF48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA2D3DD1CA63F6C00761C91 /* Obj-c */ = {
+			isa = PBXGroup;
+			children = (
+				0CA2D3DF1CA6408900761C91 /* Reachability.h */,
+				0CA2D3E01CA6408900761C91 /* Reachability.m */,
+				0CA2D3DE1CA6408800761C91 /* MusicVideo-Bridging-Header.h */,
+			);
+			name = "Obj-c";
+			sourceTree = "<group>";
+		};
 		0CC6CC291CA5443A0028BF48 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +117,7 @@
 		0CC6CC341CA5443B0028BF48 /* MusicVideo */ = {
 			isa = PBXGroup;
 			children = (
+				0CA2D3DD1CA63F6C00761C91 /* Obj-c */,
 				0CC6CC691CA575C90028BF48 /* Utils */,
 				0CC6CC651CA546C60028BF48 /* Model */,
 				0CC6CC641CA546B90028BF48 /* Controller */,
@@ -312,6 +327,7 @@
 				0CC6CC381CA5443B0028BF48 /* ViewController.swift in Sources */,
 				0CC6CC6D1CA576F50028BF48 /* MusicVideo.swift in Sources */,
 				0CC6CC361CA5443B0028BF48 /* AppDelegate.swift in Sources */,
+				0CA2D3E11CA6408900761C91 /* Reachability.m in Sources */,
 				0CC6CC6B1CA575EE0028BF48 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -454,10 +470,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuanvi.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -465,10 +484,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVideo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuanvi.MusicVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVideo/MusicVideo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -539,6 +560,7 @@
 				0CC6CC5C1CA5443C0028BF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CC6CC5D1CA5443C0028BF48 /* Build configuration list for PBXNativeTarget "MusicVideoTests" */ = {
 			isa = XCConfigurationList;
@@ -547,6 +569,7 @@
 				0CC6CC5F1CA5443C0028BF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CC6CC601CA5443C0028BF48 /* Build configuration list for PBXNativeTarget "MusicVideoUITests" */ = {
 			isa = XCConfigurationList;
@@ -555,6 +578,7 @@
 				0CC6CC621CA5443C0028BF48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
