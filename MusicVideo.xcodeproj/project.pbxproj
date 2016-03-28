@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C95216F1CA92CE3004C0DC4 /* MusicVideoTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C95216E1CA92CE3004C0DC4 /* MusicVideoTVC.swift */; };
 		0CA2D3E11CA6408900761C91 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CA2D3E01CA6408900761C91 /* Reachability.m */; };
 		0CC6CC361CA5443B0028BF48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6CC351CA5443B0028BF48 /* AppDelegate.swift */; };
-		0CC6CC381CA5443B0028BF48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6CC371CA5443B0028BF48 /* ViewController.swift */; };
 		0CC6CC3B1CA5443B0028BF48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6CC391CA5443B0028BF48 /* Main.storyboard */; };
 		0CC6CC3D1CA5443B0028BF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6CC3C1CA5443B0028BF48 /* Assets.xcassets */; };
 		0CC6CC401CA5443B0028BF48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC6CC3E1CA5443B0028BF48 /* LaunchScreen.storyboard */; };
@@ -38,12 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C95216E1CA92CE3004C0DC4 /* MusicVideoTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicVideoTVC.swift; sourceTree = "<group>"; };
 		0CA2D3DE1CA6408800761C91 /* MusicVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVideo-Bridging-Header.h"; sourceTree = "<group>"; };
 		0CA2D3DF1CA6408900761C91 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		0CA2D3E01CA6408900761C91 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		0CC6CC321CA5443B0028BF48 /* MusicVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC6CC351CA5443B0028BF48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0CC6CC371CA5443B0028BF48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0CC6CC3A1CA5443B0028BF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0CC6CC3C1CA5443B0028BF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CC6CC3F1CA5443B0028BF48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		0CC6CC641CA546B90028BF48 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				0CC6CC371CA5443B0028BF48 /* ViewController.swift */,
+				0C95216E1CA92CE3004C0DC4 /* MusicVideoTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -324,11 +324,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CC6CC681CA54E050028BF48 /* APIManager.swift in Sources */,
-				0CC6CC381CA5443B0028BF48 /* ViewController.swift in Sources */,
 				0CC6CC6D1CA576F50028BF48 /* MusicVideo.swift in Sources */,
 				0CC6CC361CA5443B0028BF48 /* AppDelegate.swift in Sources */,
 				0CA2D3E11CA6408900761C91 /* Reachability.m in Sources */,
 				0CC6CC6B1CA575EE0028BF48 /* Constants.swift in Sources */,
+				0C95216F1CA92CE3004C0DC4 /* MusicVideoTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
