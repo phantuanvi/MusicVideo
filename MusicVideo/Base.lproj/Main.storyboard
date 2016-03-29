@@ -119,6 +119,9 @@
                                                 <constraint firstItem="JTf-zg-Egw" firstAttribute="top" secondItem="pS0-Ds-JGX" secondAttribute="topMargin" constant="21" id="vOe-ep-u5O"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="7qc-Zs-9CZ" kind="show" id="Bsp-FQ-JKb"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="iMe-Oi-QuW">
                                         <rect key="frame" x="0.0" y="144" width="600" height="80"/>
@@ -388,7 +391,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jKn-Sd-0K2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3077" y="315"/>
+            <point key="canvasLocation" x="3085" y="216"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="UOm-bj-cdt">
+            <objects>
+                <viewController title="About" id="7qc-Zs-9CZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X8k-4T-OQK"/>
+                        <viewControllerLayoutGuide type="bottom" id="xgL-xG-pnf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vyl-Ki-oIY">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZbK-Mm-9dc">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Name: Phan Tuan Vi
+Email: vizillion@gmail.com</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZbK-Mm-9dc" firstAttribute="leading" secondItem="vyl-Ki-oIY" secondAttribute="leading" id="C0U-2e-Qoo"/>
+                            <constraint firstItem="xgL-xG-pnf" firstAttribute="top" secondItem="ZbK-Mm-9dc" secondAttribute="bottom" id="JcT-SL-vfG"/>
+                            <constraint firstItem="ZbK-Mm-9dc" firstAttribute="top" secondItem="X8k-4T-OQK" secondAttribute="bottom" id="Xt7-ZU-xCA"/>
+                            <constraint firstAttribute="trailing" secondItem="ZbK-Mm-9dc" secondAttribute="trailing" id="dOV-d2-wW1"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="58A-aP-aOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3085" y="918"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gWr-UO-4sj">
@@ -410,7 +447,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vzL-b5-Np6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1642" y="316"/>
+            <point key="canvasLocation" x="1642" y="216"/>
         </scene>
     </scenes>
 </document>
