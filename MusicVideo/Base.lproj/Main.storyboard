@@ -35,11 +35,11 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqS-Br-gBn">
-                                            <rect key="frame" x="172" y="16" width="420" height="20"/>
+                                            <rect key="frame" x="172" y="8" width="420" height="28"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="cTa-mU-4se"/>
+                                                <constraint firstAttribute="height" constant="28" id="cTa-mU-4se"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -47,7 +47,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="4zk-qN-WI1" secondAttribute="trailing" constant="8" id="AQh-zw-R0h"/>
-                                        <constraint firstItem="HqS-Br-gBn" firstAttribute="top" secondItem="iBp-0W-cx3" secondAttribute="top" constant="16" id="BEm-VN-4mR"/>
+                                        <constraint firstItem="HqS-Br-gBn" firstAttribute="top" secondItem="iBp-0W-cx3" secondAttribute="top" constant="8" id="BEm-VN-4mR"/>
                                         <constraint firstItem="HqS-Br-gBn" firstAttribute="leading" secondItem="NpD-ST-jmK" secondAttribute="trailing" constant="8" id="DfQ-cq-eht"/>
                                         <constraint firstItem="NpD-ST-jmK" firstAttribute="top" secondItem="iBp-0W-cx3" secondAttribute="top" constant="8" id="SV7-M3-9sw"/>
                                         <constraint firstAttribute="bottom" secondItem="4zk-qN-WI1" secondAttribute="bottom" constant="8" id="VJx-0B-yiO"/>
