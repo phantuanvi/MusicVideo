@@ -33,6 +33,16 @@ class MusicVideoDetailVC: UIViewController {
         } else {
             videoImage.image = UIImage(named: "imageNotAvailable")
         }
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "preferredFontChange", name: UIContentSizeCategoryDidChangeNotification, object: nil)
     }
 
+    func preferredFontChange() {
+        print("The preferred Font has changed")
+    }
+    
+    // Is called just as the object is about to be deallocated
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIContentSizeCategoryDidChangeNotification, object: nil)
+    }
 }
