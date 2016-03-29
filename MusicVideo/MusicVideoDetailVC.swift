@@ -38,7 +38,10 @@ class MusicVideoDetailVC: UIViewController {
     }
 
     func preferredFontChange() {
-        print("The preferred Font has changed")
+        vName.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        vGenre.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        vPrice.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        vRights.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
     }
     
     // Is called just as the object is about to be deallocated
