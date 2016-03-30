@@ -17,6 +17,8 @@ class SettingTVC: UITableViewController {
     @IBOutlet weak var bestImageDisplay: UILabel!
     @IBOutlet weak var APICnt: UILabel!
     @IBOutlet weak var sliderCnt: UISlider!
+    @IBOutlet weak var numberOfVideosDisplay: UILabel!
+    @IBOutlet weak var dragTheSliderDisplay: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,6 +35,9 @@ class SettingTVC: UITableViewController {
             let theValue = NSUserDefaults.standardUserDefaults().objectForKey("APICNT") as! Int
             APICnt.text = "\(theValue)"
             sliderCnt.value = Float(theValue)
+        } else {
+            sliderCnt.value = 10.0
+            APICnt.text = ("\(Int(sliderCnt.value))")
         }
     }
     
@@ -60,6 +65,8 @@ class SettingTVC: UITableViewController {
         securityDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         bestImageDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
         APICnt.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        numberOfVideosDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+        dragTheSliderDisplay.font = UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)
     }
     
     // Is called just as the object is about to be deallocated
